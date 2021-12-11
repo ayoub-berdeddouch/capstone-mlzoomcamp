@@ -18,18 +18,11 @@ In the entire collection, no more than 30 reviews are allowed for any given movi
 
 `Will be transformed using script __txt2csv.py__ from pos=positive=1 & neg=negative=0`
 
-## Files
-There are two top-level directories [train/, test/] corresponding to the training and test sets. Each contains [pos/, neg/] directories for the reviews with binary labels positive and negative. Within these directories, reviews are stored in text files named following the convention [[id]_[rating].txt] where [id] is a unique id and [rating] is the star rating for that review on a 1-10 scale. For example, the file [test/pos/200_8.txt] is the text for a positive-labeled test set example with unique id 200 and star rating 8/10 from IMDb. The [train/unsup/] directory has 0 for all ratings because the ratings are omitted for this portion of the dataset.
+# Exploratory Data Analysis
 
-We also include the IMDb URLs for each review in a separate [urls_[pos, neg, unsup].txt] file. A review with unique id 200 will have its URL on line 200 of this file. Due the ever-changing IMDb, we are unable to link directly to the review, but only to the movie's review page.
+* See the IMDB_EDA.ipynb notebook for this task.
 
-In addition to the review text files, we include already-tokenized bag of words (BoW) features that were used in our experiments. These are stored in .feat files in the train/test directories. Each .feat file is in LIBSVM format, an ascii sparse-vector format for labeled data. The feature indices in these files start from 0, and the text tokens corresponding to a feature index is found in [imdb.vocab]. So a line with 0:7 in a .feat file means the first word in [imdb.vocab] (the) appears 7 times in that review.
+# Modeling 
 
-LIBSVM page for details on .feat file format: http://www.csie.ntu.edu.tw/~cjlin/libsvm/
+* See the IMDB_Modeling.ipynb notebook for this task.
 
-We also include [imdbEr.txt] which contains the expected rating for each token in [imdb.vocab] as computed by (Potts, 2011). The expected rating is a good way to get a sense for the average polarity of a word in the dataset.
-
-## Citing the dataset
-When using this dataset please cite our ACL 2011 paper which introduces it. This paper also contains classification results which you may want to compare against.
-
-@InProceedings{maas-EtAl:2011:ACL-HLT2011, author = {Maas, Andrew L. and Daly, Raymond E. and Pham, Peter T. and Huang, Dan and Ng, Andrew Y. and Potts, Christopher}, title = {Learning Word Vectors for Sentiment Analysis}, booktitle = {Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies}, month = {June}, year = {2011}, address = {Portland, Oregon, USA}, publisher = {Association for Computational Linguistics}, pages = {142--150}, url = {http://www.aclweb.org/anthology/P11-1015} }
