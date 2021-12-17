@@ -21,6 +21,32 @@ In the entire collection, no more than 30 reviews are allowed for any given movi
 # Exploratory Data Analysis
 
 * See the IMDB_EDA.ipynb notebook for this task.
+## Wordcloud 
+
+![Word cloud for positive reviews](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/wordCloud_pos.png)
+![Word cloud for negative reviews](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/wordCloud_neg.png)
+
+## Number of Caracters in Corpus
+![Number of characters in texts](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/numb_car_texts.png)
+
+## Number of Words in Corpus
+![Number of words in texts](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/numb_words_texts.png)
+
+## Distribution of number of words per reviews
+![Distribution of words/ reviews](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/Distribution_of_number_words_per_reviews.png)
+
+## Distribution of AVG word length in each review
+![Distribution of AVG word length](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/Distribution_avg_number_words_per_reviews.png)
+
+## Most common words in Corpus
+![Most Common words in Corpus](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/mostCommon_words.png)
+
+
+
+## Ngram {1,2,3}
+![Unigram Positive & Negative](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/unigram_pos_neg.png)
+![Bigram Positive & Negative](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/bigram_pos_neg.png)
+![Trigram Positive & Negative](https://github.com/ayoub-berdeddouch/capstone-mlzoomcamp/blob/main/screenshots/trigram_pos_neg.png)
 
 # Modeling 
 
